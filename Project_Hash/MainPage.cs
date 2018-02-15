@@ -28,6 +28,8 @@ namespace Project_Hash
             inputString = txtBlockNr.Text + txtNounce.Text + txtHashInput.Text;
             inputString += txtPrev.Text;
 
+            string gitString;
+            gitString = "gitgit";
 
             StringToByte = Encoding.ASCII.GetBytes(inputString);
             hashValue = mySHA256.ComputeHash(StringToByte);
